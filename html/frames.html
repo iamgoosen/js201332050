@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html_frames.html</title>
+<style>
+	body{
+		font-size:12px;
+		padding:20px 0 0 20px;
+	}
+</style>
+</head>
+<body>
+	<h2>HTML  &lt;frameset&gt; Tag.<span style="color:red;">Not Supported in HTML5.</span> </h2>
+	<p>
+		The &lt;frameset&gt; tag is not supported in HTML5.<br/>
+		The &lt;frameset&gt; tag defines a frameset.<br/>
+		The &lt;frameset&gt; element holds one or more &lt;frame&gt; elements. Each &lt;frame&gt; element can hold a separate document.<br/>
+		The &lt;frameset&gt; element specifies HOW MANY columns or rows there will be in the frameset, and HOW MUCH percentage/pixels of space will occupy each of them.<br/>
+		<span style="font-weight:bold">Note</span>: If you want to validate a page containing frames, be sure the &lt;!DOCTYPE&gt; is set to either "HTML Frameset DTD" or "XHTML Frameset DTD".
+	</p>
+
+	<h3>Example</h3>
+	<div>A simple three-framed page:</div><br/>
+	<div style="border:1px solid black; padding:20px;">
+		&lt;frameset cols="25%,*,25%"&gt;<br/>
+			 &nbsp;&nbsp;&nbsp;&lt;frame src="frame_a.htm"&gt;<br/>
+			 &nbsp;&nbsp;&nbsp;&lt;frame src="frame_b.htm"&gt;<br/>
+			 &nbsp;&nbsp;&nbsp;&lt;frame src="frame_c.htm"&gt;<br/>
+		&lt;/frameset&gt;
+	</div>
+	<h3>Result:</h3>
+	<div style="border:1px solid black; padding:20px;">
+		X
+	</div>
+</body>
+</html>

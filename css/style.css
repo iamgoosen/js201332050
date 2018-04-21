@@ -1,0 +1,6 @@
+/* CSS 스타일 시트 작성 */
+body { background-color : black; color:white; font-size:13px; }
+h3 { color : purple; }
+hr { border : 5px solid yellowgreen; }
+span { color : blue; font-size : 20px; }
+.bold{ font-weight: bold; color:yellow;}

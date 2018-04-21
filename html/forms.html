@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head><title>로그인 폼</title>
+<style>
+	body{
+		font-size:12px;
+		padding:20px 0 0 20px;
+	}
+</style>
+</head>
+<body>
+	<h3>로그인 폼</h3>
+	<hr>
+	<!-- start of login form -->
+	<form name="fo" method="get">
+	사용자 ID : <input type="text" size="15" value=""><br>
+	비밀 번호 : <input type="password" size="15" value="">
+	<input type="submit" value="완료"><br>
+	<!-- end of login form -->
+
+	<!-- start of textarea -->
+	자기소개 : <textarea cols="50" rows="5">이곳에 자기소개를 하세요</textarea><br>
+	<!-- end of textarea -->
+
+	<!-- start of datalist -->
+	가고싶은곳 : <input type="text" list="countries" size="10"><br>
+	<datalist id="countries">
+		<option value="미국">
+		<option value="일본">
+		<option value="유럽">
+	</datalist>
+	보고싶은것 : <input type="text" list="what" size="10"><br>
+	<datalist id="what">
+		<option value="산">
+		<option value="바다">
+		<option value="도시">
+	</datalist>
+		<datalist id="what">
+		<option value="산">
+		<option value="바다">
+		<option value="도시">
+	</datalist>
+	<!-- end of datalist -->
+	<br>
+	<!-- 다양한 버튼 만들기 -->
+	검색: <input type="text" size="10" value="">
+	<input type="button" value="Q1">
+	<button type="button">Q2</button><br>
+	submit 버튼 : <input type="submit" value="전송1">
+	<button type="submit">전송2</button><br>
+	reset 버튼 : <input type="reset" value="리셋1">
+	<button type="reset">리셋2</button><br>
+	이미지버튼 : <input type="image" src="media/button.png" alt="이미지 버튼">
+	<button type="button">
+	<img src="media/button.png" alt="이미지 버튼">
+	</button>
+	<br>
+
+	<!-- checkbox -->
+	짜장면 <input type="checkbox" value="1">
+	짬뽕 <input type="checkbox" value="2" checked>
+	탕수육 <input type="checkbox" value="3"><br>
+
+	<!-- radio -->
+	<input type="radio" name="china" value="1">
+	짜장면<img src="../image/jjajang.png" width="150"><br>
+	<input type="radio" name="china" value="2" checked>
+	짬뽕<img src="../image/jjambbong.png" width="150"><br>
+	<input type="radio" name="china" value="3">
+	탕수육<img src="../image/tangsooyuk.png" width="150"><br>
+
+	<!-- select
+	datalist : 제시된것+직접입력 가능
+	select : 제시된것에서만 선택가능 -->
+	먹고싶은것
+	<select name="china">
+		<option value="1">짜장면</option>
+		<option value="2" selected>짬뽕</option>
+		<option value="3">탕수육</option>
+	</select><br>
+
+	<!-- 색선택 -->
+	색 선택<input type="color" value="#00BFFF"onchange= "document.body.style.color=this.value">
+
+	<!--  시간 정보 입력 폼 요소 활용 -->
+	<pre>
+month : <input type="month" value="2018-04"><br>
+week : <input type="week" value="2018-W15"><br>
+data : <input type="date" value="2018-04-12"><br>
+time : <input type="time" value="09:30"><br>
+local: <input type="datetime-local"
+value="2018-04-12T09:30:10.32"><br>
+	</pre>
+
+	<!-- number / range -->
+	지속시간 (0.0~10.0시간) :
+	<input type="number" min="0.0" max="10.0" step="0.5"><br><br>
+	온도 설정 :10&deg;
+	<input type="range" min="10" max="30" list="temperatures">30&deg;
+	<datalist id="temperatures">
+		<option value="12" label="Low">
+		<option value="20" label="Medium">
+		<option value="28" label="High">
+	</datalist><br><br>
+
+	<!-- email / url / tel / search -->
+	email : <input type="email" placeholder="id@host"><br>
+	홈페이지 : <input type="url" placeholder="http://"><br>
+	전화번호 : <input type="tel" placeholder="010-1234-5678">
+	<input type="submit" value="확인"><br><br>
+	<hr>
+	검색어 : <input type="search" placeholder="검색어">
+	<input type="button" value="검색">
+
+
+
+
+</form>
+</body>
+</html>

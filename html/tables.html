@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html_links.html</title>
+<style>
+	body{
+		font-size:12px;
+		padding:20px 0 0 20px;
+	}
+
+
+</style>
+</head>
+<body>
+	<h2>HTML Tables</h2>
+	<p>
+		An HTML table is defined with the &lt;table&gt; tag.<br/>
+		Each table row is defined with the &lt;tr&gt; tag. A table header is defined with the &lt;th&gt; tag. <br/>
+		By default, table headings are bold and centered. A table data/cell is defined with the &lt;td&gt; tag.
+	</p>
+	<div><span style="font-weight:bold;">Note</span>: The &lt;td&gt; elements are the data containers of the table.<br/>
+	They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+	</div>
+
+	<h3>Example</h3>
+	<div style="border:1px solid black; padding:20px;">
+		&lt;table border="1"><br/>
+		  &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Firstname&lt;/th&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Lastname&lt;/th&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br/>
+		 &nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br/>
+		 &nbsp;&nbsp;&nbsp; &lt;tr&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jill&lt;/td&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Smith&lt;/td&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;50&lt;/td&gt;<br/>
+		  &nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+		  &nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Eve&lt;/td&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jackson&lt;/td&gt;<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;94&lt;/td&gt;<br/>
+		 &nbsp;&nbsp;&nbsp; &lt;/tr&gt;<br/>
+		&lt;/table&gt;
+	</div>
+	<h3>Result:</h3>
+	<div style="border:1px solid black; padding:20px;">
+		<table border="1">
+		  <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		  </tr>
+		  <tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		  </tr>
+		  <tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		  </tr>
+		</table>
+	</div>
+	<hr/>
+	<h3>응용예제: 내 시간표 만들기</h3>
+	<div style="border:1px solid black; padding:20px;">
+		<table class="mytable" border="1" cellspacing="0" cellpadding="10" style="text-align:center;">
+			<caption>김건위의 시간표</caption> <!--표의 제목(캡션) -->
+			<tr>
+				<th width="10%">시간/요일</th>
+				<th width="18%">월요일</th>
+				<th width="18%">화요일</th>
+				<th width="18%">수요일</th>
+				<th width="18%">목요일</th>
+				<th width="18%">금요일</th>
+			</tr>
+
+			<tr>
+				<td>1교시</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>자바스크립트</td>
+				<td rowspan="3">창업아이디어</td> <!--row(행) 확장-->
+			</tr>
+
+			<tr>
+				<td>2교시</td>
+				<td></td>
+				<td align="center" bgcolor="yellow">사회봉사</td>
+				<td></td>
+				<td rowspan="2">c프로그래밍입문</td>
+			</tr>
+
+			<tr>
+				<td>3교시</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>4교시</td>
+				<td></td>
+				<td rowspan="3">미래사회창의혁신과컴퓨팅적사고</td>
+				<td></td>
+				<td></td>
+				<td>C프로그래밍입문</td>
+			</tr>
+
+			<tr>
+				<td>5교시</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td rowspan="2">자바스크립트</td>
+			</tr>
+
+			<tr>
+				<td>6교시</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>7교시</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>8교시</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>9교시</td>
+				<td></td>
+				<td>네트워크프로젝트</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+	</table>
+
+	</div>
+</body>
+</html>
