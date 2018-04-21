@@ -3,20 +3,104 @@
 <head>
 <meta charset="utf-8">
 <title>html_basic.html</title>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 <style>
+
 	body{
-		font-size:12px;
-		padding:20px 0 0 20px;
+		font-size:13px;
+		padding:20px;
+		font-family: 'Nanum Gothic', sans-serif;
 	}
+
+	.heading{
+		text-align: center;
+		letter-spacing:1px;
+		color:#2E2E2E;
+	}
+
+	hr{
+		margin-top:10px;
+	}
+
+	.box{
+		width:70%;
+		margin:20px auto;
+		padding:20px;
+	}
+
+	.color1{
+		border:1px solid #01DF3A;
+		background-color: #81F781;
+	}
+
+	.color2{
+		border:1px solid #2E64FE;
+		background-color: #58ACFA;
+	}
+
+	.color3{
+		border:1px solid #FE9A2E;
+		background-color: #F7BE81;
+	}
+
+	.color4{
+		border:1px solid #58FAAC;
+		background-color: #A9F5D0;
+	}
+
+	.box > p:first-child{
+		font-size:18px;
+		text-align: center;
+		font-weight:bold;
+	}
+
+
+
+
 </style>
 </head>
 <body>
-	<h2>HTML Documnets</h2>
+	<h1 class="heading">HTML 문서 구조</h1>
+	<hr>
+	<div class="box color1">
+		<p>HTML 태그</p>
+		<p>태그를 이용하여 문서의 구조 및 모양을 정의하는 마크업 언어</p>
+		<p>태그는 문서의 구조와 형태를 표현하는 명령어</p>
+		<p>태그는 "&lt;&gt;"로 표현한다.</p>
+	</div>
+	<div class="box color2">
+		<p>태그의 형식과 예</p>
+		<p>1.&lt;시작태그&gt;~&lt;끝태그&gt;<br>예) &lt;h1&gt;heading 1&lt;/h1&gt;</p>
+		<p>2.&lt;태그 속성=값&gt;~&lt;끝태그&gt;<br>예) &lt;a href="http://www.naver.com"&gt;네이버로 이동&lt;/a&gt;</p>
+		<p>3.&lt;태그&gt;<br>예) <br>처럼 끝태그가 없는경우</p>
+	</div>
+	<div class="box color3">
+		<p>HTML문서의 기본 구조</p>
+		<p>
+				&lt;!DOCTYPE html&gt;-----------------html5문서임을 선언<br>
+				&lt;html&gt;--------------------------html문서의 시작<br>
+				&nbsp;&lt;head&gt;--------------------------html문서의 머리부분<br>
+				&nbsp;&nbsp;&lt;title&gt;문서제목&lt;/title&gt;-------------------------html문서의 제목<br>
+				&nbsp;&lt;/head&gt;-------------------------html문서의 머리끝<br>
+				&nbsp;&lt;body&gt;--------------------------html문서의 몸통<br>
+				&nbsp;&lt;/body&gt;-------------------------html문서의 몸통끝<br>
+				&lt;/html&gt;-------------------------html문서의 종료
+		</p>
+	</div>
+	<div class="box color4">
+		<p>HTML문서 기분구조의 태그설명</p>
+		<p>&lt;html&gt; : HTML문서의 시작을 의미하며,동시에 HTML문서형식으로 작성되었음을 나타냄</p>
+		<p>&lt;title&gt; : HTML문서의 제목을 브라우저의 제목표시줄에 나타냄.</p>
+		<p>&lt;head&gt; : 작성하려는 HTML문서에 대한 설명(정보)를 나타냄.</p>
+		<p>&lt;body&gt; : HTML문서의 표시할 실제 내용을 포함함.</p>
+	</div>
+<!--
 	<p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.<br/>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.<br/>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p><br/>
 	<h3>Example</h3>
 	<div style="border:1px solid black; padding:20px;">
 	<p>&lt;!DOCTYPE html&gt;<br/>&lt;html&gt;<br/>&lt;body&gt;<br/><br/>&lt;h1&gt;My First Heading&lt;/h1&gt;<br/>&lt;p&gt;My first paragraph.&lt;/p&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
 	</p>
 	</div>
+-->
 </body>
 </html>
