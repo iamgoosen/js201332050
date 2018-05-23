@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html><head><title>함수 만들기</title>
+<style>
+	body{
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	<h3>구구단 출력 함수 만들기</h3>
+	<hr>
+	<table border="3" width="500px" height="500px">
+		<tr>
+			<td colspan="3">구구단</td>
+		</tr>
+	<script>
+	for(var i=0; i<3; i++){
+		document.write("<tr>");
+		for(var j=1; j<=3; j++){
+			document.write("<td>");
+			for(var k=1; k<=9; k++){
+				if(((i*3)+j)*k<10){
+					document.write(((i*3)+j)+"x"+k+"=0"+((i*3)+j)*k+"<br>");
+					continue;
+				}
+				document.write(((i*3)+j)+"x"+k+"="+((i*3)+j)*k+"<br>");
+			}
+			document.write("</td>");
+		}
+		document.write("</tr>");
+	}
+	</script>
+</body>
+</html>

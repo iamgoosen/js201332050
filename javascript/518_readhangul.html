@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>조건 연산</title></head>
+<body>
+<h3>조건 연산</h3>
+<hr>
+<script>
+var x=prompt("한글을 사랑합니다","123");
+var y=parseInt(x);
+if(y==0){
+	document.write("영");
+}
+else{
+Q = hangulro(y%10)=="" ? "일" : hangulro(y%10);     y=(y-(y%10))/10;
+if((y%10)==0){Q=Q;} else{Q=hangulro(y%10)+"십"+Q;}  y=(y-(y%10))/10;
+if((y%10)==0){Q=Q;} else{Q=hangulro(y%10)+"백"+Q;}  y=(y-(y%10))/10;
+if((y%10)==0){Q=Q;} else{Q=hangulro(y%10)+"천"+Q;}  y=(y-(y%10))/10;
+if((y%10)==0){Q=Q;} else{Q=hangulro(y%10)+"만"+Q;}  y=(y-(y%10))/10;
+document.write("(!) " + x + " 를 한글로 읽으면 \"" + Q + "\"입니다.<br>");
+
+function hangulro(v) { var hangul=""; switch(v) {
+case 0: break;
+case 1: hangul=""; break;
+case 2: hangul="이"; break;
+case 3: hangul="삼"; break;
+case 4: hangul="사"; break;
+case 5: hangul="오"; break;
+case 6: hangul="육"; break;
+case 7: hangul="칠"; break;
+case 8: hangul="팔"; break;
+case 9: hangul="구"; break;
+default : hangul="?";
+} return hangul;
+}
+}
+</script>
+
+</body>
+</html>
